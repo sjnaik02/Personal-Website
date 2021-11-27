@@ -1,0 +1,111 @@
+:root{
+    --background-color-alt: #e2b714;
+    --background-color: #323437;
+    --font-color-alt: #000;
+    --font-color: #fff;
+    --ivory: #d1d0c5;
+
+    --font-size-l: 135px;
+    --font-size-m: 40px;
+    --font-size-s: 18px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    max-width: 40em;
+    background-color: var(--background-color-alt);
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-color: var(--background-color-alt);
+    color: var(--font-color-alt);
+    
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.hero-text{
+    font-family: 'Space Mono', monospace;
+    font-size: var(--font-size-l);
+    text-align: center;
+    padding: 0 12.5% 0 12.5%;
+}
+
+.subtitle{
+    opacity:55%;
+    font-size: var(--font-size-m);
+    padding-bottom: 10%;
+}
+.navbar{
+    position: fixed;
+    margin-top: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: monospace;
+    background-color: var(--background-color);
+    width: 100vw;
+}
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar li, a{
+    display: inline;
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: calc(var(--font-size-s)*1.25);
+    padding: 0 1em 0 1em;
+}
+
+.hidden{
+    display: none;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.about{
+    background-color: var(--background-color);
+    color:var(--font-color);
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.about h2{
+    font-size: calc(var(--font-size-m)*1.75);
+}
+
+.about-text{
+    text-align: left;
+    padding: 0 12.5% 0 12.5%;
+    font-size: calc(var(--font-size-s)*1.5);
+}
+
+@media (max-width: 600px){
+    :root{
+    --font-size-l: 75px;
+    --font-size-m: 25px;
+    --font-size-s: 16px;
+    }
+}
