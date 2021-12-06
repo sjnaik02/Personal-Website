@@ -13,16 +13,13 @@ window.onload = function typeWriter() {
 
  //Making the navbar appear after scrolling through hero
 
- // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
 var sticky = window.innerHeight;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.remove("hidden")
