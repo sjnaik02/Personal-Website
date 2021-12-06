@@ -3,7 +3,6 @@ var txt = 'Shourya Naik'; // The text
 var speed = 200; // The speed/duration of the effect in milliseconds 
 
 window.onload = function typeWriter() {
-    console.log('hello')
         if (i < txt.length) {
           document.getElementById("hero-text").innerHTML += txt.charAt(i);
           i++;
